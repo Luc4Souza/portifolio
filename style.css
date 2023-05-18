@@ -1,0 +1,303 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+body{
+    background-color: #22212C;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.left-side{
+    margin: 0px 30px 0 30px;
+    width: 350px;
+    height: 100vh;
+}
+
+.perfil{
+    height: 250px;
+    padding: 15px;
+    border-radius: 10px;
+
+    color: #837E9F;
+    background-color: #302F3D;
+}
+
+.perfil > img{
+    display: block;
+    margin: auto;
+    border: 2px solid greenyellow;
+
+    border-radius: 50%;
+    width: 120px;
+}
+
+.perfil > h1{
+    text-align: center;
+
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.perfil > p{
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+.redes-sociais{
+    
+    padding: 15px;
+    border-radius: 10px;
+    margin: 30px 0px 30px 0px;
+
+    color: #837E9F;
+    background-color: #302F3D;
+}
+
+a{
+    text-decoration: none;
+
+    color: #837E9F;
+}
+
+.redes-sociais li{
+    list-style-type: none;
+
+    padding-bottom: 15px;
+}
+
+.tecnologias{
+    padding: 15px;
+    border-radius: 10px;
+    color: #837E9F;
+    background-color: #302F3D;
+}
+
+.tecnologias > ul{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.tecnologias li{
+    list-style: none;
+    text-align: center;
+
+    margin-bottom: 15px;
+    margin-right: 10px;
+    height: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70px;
+    
+    color: black;
+    background-color: #CB92B1;
+}
+.list1{
+    display: inline-block;
+}
+
+.list2{
+    display: inline-block;
+}
+
+.list3{
+    display: inline-block;
+}
+
+.right-side{
+    margin: 0px 0px 0px 0px;
+    width: 70%;
+    height: 100vh;
+}
+
+.title> h1{
+    margin: 0px 0px 30px 0px ;
+    border-radius: 10px;
+    padding: 15px 0px 15px 0px;
+    
+    font-size: 2rem;
+    color: #837E9F;
+    background-color: #302F3D;
+}
+
+.title > span{
+    font-size: 15px;
+
+    color: #837E9F;
+}
+
+.box-proj{
+    display: flex;
+}
+
+.project-one{
+    width: 50%;
+    margin: 0px 20px 30px 0px;
+    padding: 30px 0px 10px 15px;
+    border-radius: 10px;
+
+    color: #837E9F;
+    background-color: #302F3D;
+}
+
+.card-info{
+    display: flex;
+
+    margin-bottom: 15px;
+}
+
+.card-info h2{
+    margin-left: 20px;
+    font-size: 2rem;
+}
+
+.project-one p{
+    font-size: 20px;
+}
+
+.info{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.info-svg{
+    margin-right: 5px;
+}
+
+.js{
+    margin-left: 50px;
+}
+
+.posts{
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+
+    color: #837E9F;
+    background-color: #302F3D;
+}
+
+footer{
+    display: flex;
+    padding: 25px 0px 30px 20px;
+    border-radius: 10px;
+
+    color: #837E9F;
+    background-color: #302F3D;
+}
+
+.footer-left > img{
+    border-radius: 15px;
+    border: 2px solid greenyellow
+}
+
+.footer-right  h2{
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.footer-right  .paragrafo1{
+    margin-top: 10px;
+    margin-bottom: 35px;
+    margin-left: 15px;
+}
+
+.footer-right  .paragrafo2{
+    margin-top: 35px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+
+    font-variant: small-caps;
+}
+
+.footer-right  .paragrafo3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1600px){
+    .left-side{
+        min-width: 250px;
+    }
+    .right-side{
+        margin-left: 15px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 1100px) {
+    .card-box{
+        flex-direction: column;
+    }
+    .left-side{
+        height: 92vh;
+    }
+    .right-side{
+        min-width: 250px
+    }
+    .title{
+        width: 350px;
+        text-align: center;
+    }
+    span{
+        display: none;
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-proj{
+        flex-direction: column;
+    }
+    .project-one{
+        width: 350px;
+        margin: 0px 0px 30px 0px;
+    }
+    .posts{
+        width: 330px;
+        margin: auto ;
+        margin-bottom: 30px;
+        text-align: center;
+    }footer{
+        flex-direction: column;
+        width: 350px;
+        margin: auto;
+        
+    }
+    footer img{
+        display: block;
+        margin: auto;
+    }
+}
+@media (max-width: 650px) {
+    .right-side{
+        width: 100%;
+        margin-right: 100px;
+    }
+    .left-side{
+        margin-right: 100px;
+    }
+}
